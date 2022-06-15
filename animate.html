@@ -1,0 +1,137 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <link rel="stylesheet" href="Layout.css">
+    <!-- <link rel="stylesheet" href="animate.css"> -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="span12 banner-section">
+        <div class="span12 wrapper ">
+            <div class="row-fluid-wrapper ">
+                <div class="row-fluid">
+                    <div class="span6 vertical-center left-col">
+                        <div class="text-container">
+                            <h1>
+                                <h1>We help the world’s best companies connect with their customers.</h1>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="span6 vertical-center right-col">
+                        <div class="main-container">
+                            <div class="inner-div row-1">
+                                <div class="upper-div ">
+                                    <div class="image-container row-11 tab-1">
+                                        <style>
+                                            .banner-section .image-container {
+                                                height: 85px;
+                                                width: 85px;
+                                                min-width: 85px;
+                                                border-radius: 100% 100% 100% 0;
+                                                -webkit-transition: all 1s ease;
+                                                -moz-transition: all 1s ease;
+                                                -o-transition: all 1s ease;
+                                                -ms-transition: all 1s ease;
+                                                transition: all 1s ease;
+                                            }
+
+                                            .banner-section {
+                                                padding-top: 100px;
+                                            }
+
+                                            .banner-section .image-container.tab-1 {
+                                                background: #e7e7e7;
+                                            }
+
+                                            .banner-section .image-container.tab-1.change-color {
+                                                width: 0;
+                                                min-width: fit-content;
+                                                height: 0;
+                                                border-right-width: 0 !important;
+                                                border-top: 85px solid transparent;
+                                                border-radius: inherit;
+                                                border-left: 85px solid #F93858 !important;
+                                                overflow: hidden;
+                                                background: none;
+                                                transition: border-radius 1s cubic-bezier(0, 0.02, 1, 1.46);
+                                            }
+
+                                            .image-container.tab-1 {
+                                                border-radius: 100% 100% 100% 0;
+                                                -webkit-transition: all 1s ease;
+                                                -moz-transition: all 1s ease;
+                                                -o-transition: all 1s ease;
+                                                -ms-transition: all 1s ease;
+                                                transition: all 1s ease;
+                                            }
+                                        </style>
+                                    </div>
+
+                                </div>
+                                <div class="upper-div ">
+                                    <div class="image-container row-12 tab-2">
+
+                                    </div>
+
+                                </div>
+                                <div class="upper-div ">
+                                    <div class="image-container row-13 tab-3">
+
+                                    </div>
+
+                                </div>
+                                <div class="upper-div ">
+                                    <div class="image-container row-14 tab-4">
+
+                                    </div>
+
+                                </div>
+                                <div class="upper-div ">
+                                    <div class="image-container row-15 tab-5">
+
+                                    </div>
+
+                                </div>
+                                <div class="upper-div ">
+                                    <div class="image-container row-16 tab-6">
+
+                                    </div>
+
+                                </div>
+                                <div class="upper-div ">
+                                    <div class="image-container row-17 tab-7">
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            // $(".banner-section .main-container .inner-div>div").hover(
+            //     function () {
+            //         $(this).addClass("change-text");
+            //     }
+            // );
+            $(".banner-section .main-container .image-container").hover(
+                function () {
+                    $(this).addClass("change-color");
+                }
+            );
+        });
+    </script>
+
+</body>
+
+</html>

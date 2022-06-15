@@ -1,0 +1,249 @@
+body .row-fluid .wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.green-text {
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.27;
+    letter-spacing: normal;
+    text-align: center;
+    color: #00c0a1;
+}
+
+.red-text {
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.27;
+    letter-spacing: normal;
+    text-align: center;
+    color: #e63c3c;
+}
+
+.icon-container {
+    padding: 35px;
+    display: block;
+}
+
+.image-container {
+    display: inline-block;
+}
+
+
+.big-para .para-600 {
+    font-weight: 600;
+}
+
+.para-head {
+    max-width: 536px;
+}
+
+.header-section {
+    /* position: absolute; */
+    width: 100%;
+    padding: 40px 0;
+    z-index: 1;
+}
+
+.header-section img {
+    max-width: 154px;
+}
+
+.form-head {
+    padding-bottom: 35px;
+}
+
+.gray-bg {
+    background: #e1e9f1;
+}
+
+.bottom-pad-15 {
+    padding-bottom: 15px;
+}
+
+.section-padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.section-padding-up {
+    padding-top: 80px;
+}
+
+.section-padding-down {
+    padding-bottom: 80px;
+}
+
+.padding-top-30 {
+    padding-top: 30px;
+}
+
+.main-section-1 {
+    position: relative;
+    z-index: 1;
+
+}
+
+.main-section-1::before {
+    content: '';
+    background: url(images/Group1.png) no-repeat;
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    right: -35px;
+    left: 999px;
+    bottom: 43px;
+    height: 111%;
+    width: 58%;
+}
+
+.main-section-2 {
+    position: relative;
+    z-index: 1;
+    /* background-image: url(images/Group2.png);
+    background-size: auto;
+    background-position: left ;
+    background-repeat: no-repeat;
+    size: auto; */
+}
+
+.main-section-2::before {
+    content: '';
+    background: url(images/Group2.png) no-repeat;
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+    left: -6px;
+    bottom: -18px;
+    height: 132%;
+    width: 45%;
+}
+
+.hide-in-desktop {
+    display: none;
+}
+.all-pad-20{
+    padding: 20px;
+}
+
+.blockquote-container {
+    max-width: 967px;
+    margin: 0 auto;
+}
+
+.img-bottom-pad {
+    padding-bottom: 40px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.bottom-margin {
+    margin-bottom: 35px;
+}
+
+.no-list-style li ul {
+    margin: 0;
+    padding: 0;
+}
+
+.no-list-style li {
+    margin: 0;
+}
+
+.no-list-style li:before {
+    display: none;
+}
+
+.form-section {
+    padding: 28px 36px 36px;
+}
+
+.form-bottom {
+    padding-top: 15px;
+}
+.table-container{
+    padding: 50px 60px;
+}
+
+
+/* sections styling */
+.section-1 {
+    background: url('images/Vector\ 3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center !important;
+}
+
+.section-2 .top-heading {
+    max-width: 696px;
+    box-sizing: border-box;
+}
+.section-7{
+    background-image: linear-gradient(to top, #021536, #021078);
+}
+
+@media (max-width:767px) {
+    .col-reverse .wrapper>.row-fluid-wrapper>.row-fluid {
+        display: flex;
+        display: -webkit-flex;
+        -webkit-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+
+
+    .main-section-2::before,
+    .main-section-1::before {
+        background: url(images/Group2.png) no-repeat;
+        left: -1px;
+        bottom: -278px;
+        height: 111%;
+        width: 100%;
+    }
+    .main-section-1::before :first-child {
+        bottom: -290px;
+    height: 93%;
+    width: 101%;
+    }
+
+    .section-padding-down {
+        padding-bottom: 25px;
+    }
+
+    .hide-in-mobile {
+        display: none !important;
+    }
+
+    .two-col-adjust .hide-in-mobile {
+        display: none !important;
+    }
+
+    .hide-in-desktop {
+        display: block;
+    }
+
+    .stats-container .stats {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 115%;
+    }
+
+    .section-padding {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
